@@ -10,7 +10,7 @@ and
 <br>
 <code><b>bin/receive</b></code><br>
 <b>(this piece is not mandatory, it can need if you want to capture remote sniffer,
-via a vpn or as shown in the example below with a raspberry via USB otg.)<b><br>
+via a vpn or as shown in the example below with a raspberry via USB otg.)</b><br>
 
 a example use with raspberry pi zero otg usb and client pc:<br>
 
