@@ -20,8 +20,8 @@ ZERO(receive) <---> PC(sniffer)
 
 run the receive on the ZERO and run sniffer on PC, sniffer it takes care of sending all the keyboard info to the receive..
 
-usb otg pi-zero:
-<img src="1.png"/><br>
+usb otg pi-zero:<br>
+<img src="1.jpg"/><br>
 
 # /boot/config.txt
 # dtoverlay=dwc2
@@ -29,8 +29,8 @@ usb otg pi-zero:
 # /boot/cmdline.txt
 # modules-load=dwc2,g_ether
 
-screen sniffig:
-<img src="2.png"/><br>
+screen sniffig:<br>
+<img src="2.jpg"/><br>
 
 # ip address show
 # ip link set usb0 up
