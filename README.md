@@ -32,11 +32,21 @@ and add:
 and add:
 <code><b>modules-load=dwc2,g_ether</b></code><br>
 
+assign static ip on pizero:
+<pre><code><b>
+allow-hotplug usb0<br>
+iface usb0 inet static<br>
+        address 192.168.7.2<br>
+        netmask 255.255.255.0<br>
+        network 192.168.7.0<br>
+        broadcast 192.168.7.255<br>
+        gateway 192.168.7.1<br>
+</b></code></pre>
 screen sniffig:<br>
 <img src="2.jpg"/><br>
 <br>
 
-if client side <code>ifconfig does</code> not return USB device, try with:<b>
+if client side <code>ifconfig does</code> not return USB device, try with:<b><br>
 <b>ip address show</b><br>
 <b>ip link set usb0 up</b><br>
 <b>ifconfig usb0 192.168.7.10</b><br>
