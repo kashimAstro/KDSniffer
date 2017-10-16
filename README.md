@@ -16,7 +16,7 @@ a example use with raspberry pi zero otg usb and client pc:<br>
 
 connect your pi-zero via USB to PC you want to monitor.<br>
 
-<code>ZERO(receive) <---> PC(sniffer)</code><br>
+<code><b>ZERO(receive) <---> PC(sniffer)</b></code><br>
 
 run the receive on the ZERO and run sniffer on PC, sniffer it takes care of sending all the keyboard info to the receive.<br>
 
@@ -34,7 +34,9 @@ and add:
 
 screen sniffig:<br>
 <img src="2.jpg"/><br>
+<br>
 
-<b>ip address show</b>
-<b>ip link set usb0 up</b>
-<b>ifconfig usb0 192.168.7.10</b>
+if client side <code>ifconfig does</code> not return USB device, try with:<b>
+<b>ip address show</b><br>
+<b>ip link set usb0 up</b><br>
+<b>ifconfig usb0 192.168.7.10</b><br>
