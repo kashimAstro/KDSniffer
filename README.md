@@ -33,8 +33,7 @@ and add:
 <code><b>modules-load=dwc2,g_ether</b></code><br>
 
 assign static ip on pizero:
-<pre><code><b>
-allow-hotplug usb0<br>
+<pre><code><b>allow-hotplug usb0<br>
 iface usb0 inet static<br>
         address 192.168.7.2<br>
         netmask 255.255.255.0<br>
