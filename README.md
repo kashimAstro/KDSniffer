@@ -9,7 +9,7 @@ this demon it is divided into two pieces:
 and 
 <br>
 <code><b>bin/receive</b> </code><br>
-(this piece is not mandatory, it can serve if you want to capture remote sniffer,
+(this piece is not mandatory, it can need if you want to capture remote sniffer,
 via a vpn or as shown in the example below with a raspberry via USB otg.)<br>
 
 a example use with raspberry pi zero otg usb and client pc:<br>
