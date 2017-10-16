@@ -4,13 +4,13 @@ a simple sniffer for event keyboard and screen desktop x11,
 this demon it is divided into two pieces:
 
 <code><b>bin/sniffer</b></code><br>
-<b><small>(to be placed on the machine to sniff)</small></b>
+<b><h6>(to be placed on the machine to sniff)</h6></b>
 <br> 
 and 
 <br>
 <code><b>bin/receive</b></code><br>
-<b><small>(this piece is not mandatory, it can need if you want to capture remote sniffer,
-via a vpn or as shown in the example below with a raspberry via USB otg.)</small></b><br>
+<b><h6>(this piece is not mandatory, it can need if you want to capture remote sniffer,
+via a vpn or as shown in the example below with a raspberry via USB otg.)</h6></b><br>
 
 a example use with raspberry pi zero otg usb and client pc:<br>
 
